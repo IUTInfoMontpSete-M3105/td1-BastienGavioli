@@ -6,7 +6,10 @@ public class Enseignant extends Utilisateur {
     /**
      * Default constructor
      */
-    public Enseignant() {
+      public Enseignant(String nom, String prenom, String adressePostale, String adresseMail, int numem, int harpege) {
+        super(nom, prenom, adressePostale, adresseMail);
+        this.numem = numem;
+        this.harpege = harpege;
     }
 
     /**
@@ -18,20 +21,5 @@ public class Enseignant extends Utilisateur {
      * 
      */
     private int harpege;
-
-
-    /**
-     * 
-     */
-    public void saisirNote() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public void délivrerCertificat() {
-        // TODO implement here
-    }
 
 }

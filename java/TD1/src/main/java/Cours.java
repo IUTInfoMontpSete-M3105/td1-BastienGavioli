@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 
  */
@@ -6,7 +9,9 @@ public class Cours {
     /**
      * Default constructor
      */
-    public Cours() {
+    public Cours(String nom, int semestre) {
+        this.nom = nom;
+        this.semestre = semestre;
     }
 
     /**
@@ -24,21 +29,21 @@ public class Cours {
      * @param doc
      */
     public void uploadDoc(String doc) {
-        // TODO implement here
+
     }
 
     /**
      * @param ens
      */
     public void informEns(Enseignant ens) {
-        // TODO implement here
+        System.out.println("L'enseignant est informé.");
     }
 
     /**
      * @param etu
      */
     public void informerEtud(Etudiant etu) {
-        // TODO implement here
+        System.out.println("L'étudiant est informé.");
     }
 
 }

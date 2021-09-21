@@ -1,59 +1,33 @@
-/**
- * 
- */
+
 public class Rendu {
 
     /**
      * Default constructor
      */
-    public Rendu() {
+    public Rendu(String document, String date) {
+        this.document = document;
+        this.date = date;
     }
 
-    /**
-     * 
-     */
     private String document;
 
-    /**
-     * 
-     */
     private String date;
 
-    /**
-     * 
-     */
     private float points;
 
-
-
-
-
-    /**
-     * @param doc
-     */
     public void setDocument(String doc) {
-        // TODO implement here
+        document = doc;
     }
 
-    /**
-     * @param ens
-     */
-    public void affecterEns(String ens) {
-        // TODO implement here
+    public void affecterEns(Enseignant ens, Cours c) {
+        c.informEns(ens);
+    }
+    public String getDoc() {
+        return document;
     }
 
-    /**
-     * 
-     */
-    public void getDoc() {
-        // TODO implement here
-    }
-
-    /**
-     * @param note
-     */
     public void setNote(int note) {
-        // TODO implement here
+        points = note;
     }
 
 }
