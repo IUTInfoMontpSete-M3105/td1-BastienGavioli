@@ -1,9 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
 
-/**
- * 
- */
 public class Cours {
 
     /**
@@ -14,36 +9,20 @@ public class Cours {
         this.semestre = semestre;
     }
 
-    /**
-     * 
-     */
     private String nom;
 
-    /**
-     * 
-     */
     private int semestre;
 
-
-    /**
-     * @param doc
-     */
     public void uploadDoc(String doc) {
-
+        System.out.println("Le doc " + doc + " a été publié");
     }
 
-    /**
-     * @param ens
-     */
     public void informEns(Enseignant ens) {
-        System.out.println("L'enseignant est informé.");
+        System.out.println("L'enseignant " + ens + " est informé.");
     }
 
-    /**
-     * @param etu
-     */
     public void informerEtud(Etudiant etu) {
-        System.out.println("L'étudiant est informé.");
+        System.out.println("L'étudiant " + etu + " est informé.");
     }
 
 }

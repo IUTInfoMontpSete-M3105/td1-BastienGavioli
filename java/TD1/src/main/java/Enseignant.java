@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 public class Enseignant extends Utilisateur {
 
     /**
@@ -12,14 +10,8 @@ public class Enseignant extends Utilisateur {
         this.harpege = harpege;
     }
 
-    /**
-     * 
-     */
     private int numem;
 
-    /**
-     * 
-     */
     private int harpege;
 
 }

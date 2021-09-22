@@ -5,13 +5,7 @@ public class Certificat {
         public Certificat() {
         }
 
-        /**
-         *
-         */
         private int totalPoints;
 
-        /**
-         *
-         */
         private String appréciation;
 }

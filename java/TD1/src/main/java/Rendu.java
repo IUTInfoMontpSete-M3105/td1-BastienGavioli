@@ -19,9 +19,10 @@ public class Rendu {
         document = doc;
     }
 
-    public void affecterEns(Enseignant ens, Cours c) {
-        c.informEns(ens);
+    public void affecterEns(Enseignant ens) {
+        System.out.println("L'enseignant " + ens + " a été affecté");;
     }
+
     public String getDoc() {
         return document;
     }
